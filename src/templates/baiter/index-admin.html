@@ -1,0 +1,254 @@
+{% extends 'baiter/base-admin.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="token-statistics card card-token height-auto">
+                    <div class="card-innr">
+                        <div class="token-balance token-balance-with-icon">
+                            <div class="token-balance-icon"><img src="{% static 'images/logo-light-sm.png' %}"
+                                    alt="logo"></div>
+                            <div class="token-balance-text">
+                                <h6 class="card-sub-title"> کیف پول </h6><span class="lead">120,000
+                                    <span class="lead">تومان </span></span>
+                            </div>
+                        </div>
+                        <div class="token-balance token-balance-s20">
+                            <h6 class="card-sub-title">تعداد معاملات</h6>
+                            <ul class="token-balance-list">
+                                <li class="token-balance-sub"><span class="sub"> کل معاملات </span>
+                                    <span class="lead">7</span></li>
+                                <li class="token-balance-sub"><span class="sub"> خرید </span>
+                                    <span class="lead">1</span></li>
+                                <li class="token-balance-sub"><span class="sub"> فروش</span>
+                                    <span class="lead">6</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .col -->
+            <div class="col-xl-3 col-sm-6 mb-4">
+                <div class="box bg_primary">
+                    <div class="box-head d-flex align-items-center justify-content-between">
+                        <h3>Bitcoin</h3>
+                        <i title="BTC" class="cc BTC-alt"></i>
+                    </div>
+                    <div class="box-body d-flex align-items-center justify-content-between">
+                        <span>1 BTC = 6,695.90 USD </span>
+                        <span>+1.35%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 mb-4">
+                <div class="box bg_info">
+                    <div class="box-head d-flex align-items-center justify-content-between">
+                        <h3>Ethereum</h3>
+                        <i class="cc ETC" title="ETC"></i>
+                    </div>
+                    <div class="box-body d-flex align-items-center justify-content-between">
+                        <span>1 ETH = 478.24 USD </span>
+                        <span>-5.35%</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-xl-8 col-lg-7">
+                <div class="token-transaction card card-full-height">
+                    <div class="card-innr">
+                        <div class="card-head has-aside">
+                            <h4 class="card-title">Transaction</h4>
+                            <div class="card-opt"><a href="transactions.html" class="link ucap">دیدن همه <em
+                                        class="fas fa-angle-left ml-2"></em></a></div>
+                        </div>
+                        <table class="table tnx-table">
+                            <thead>
+                                <tr>
+                                    <th>TWZ Tokens</th>
+                                    <th>Amount</th>
+                                    <th class="d-none d-sm-table-cell tnx-date">Date</th>
+
+                                    <th class="tnx-type">
+                                        <div class="tnx-type-text"></div>
+                                    </th>
+                                </tr><!-- tr -->
+                            </thead><!-- thead -->
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="data-state data-state-pending"></div><span
+                                                class="lead">pending</span>
+                                        </div>
+                                    </td>
+                                    <td><span><span class="lead">3.543</span><span class="sub">ETH <em
+                                                    class="fas fa-info-circle" data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    data-original-title="1 ETH = 590.54 USD"></em></span></span>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell tnx-date"><span class="sub sub-s2">2018-08-24
+                                            10:20 PM</span></td>
+                                    <td class="tnx-type"><span
+                                            class="tnx-type-md badge badge-outline badge-success badge-md">خرید</span><span
+                                            class="tnx-type-sm badge badge-sq badge-outline badge-success badge-md">B</span>
+                                    </td>
+                                </tr><!-- tr -->
+
+
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="data-state data-state-progress"></div><span
+                                                class="lead">progress</span>
+                                        </div>
+                                    </td>
+                                    <td><span><span class="lead">0.165</span><span class="sub">BTC <em
+                                                    class="fas fa-info-circle" data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    data-original-title="1 BTC = 5450.54 USD"></em></span></span>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell tnx-date"><span class="sub sub-s2">2018-08-24
+                                            10:20 PM</span></td>
+                                    <td class="tnx-type"><span
+                                            class="tnx-type-md badge badge-outline badge-warning badge-md">فروش</span><span
+                                            class="tnx-type-sm badge badge-sq badge-outline badge-warning badge-md">S</span>
+                                    </td>
+                                </tr><!-- tr -->
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            <div class="data-state data-state-approved"></div><span
+                                                class="lead">approved</span>
+                                        </div>
+                                    </td>
+                                    <td><span><span class="lead">3.141</span><span class="sub">LTC <em
+                                                    class="fas fa-info-circle" data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    data-original-title="1 LTC = 180.54 USD"></em></span></span>
+                                    </td>
+                                    <td class="d-none d-sm-table-cell tnx-date"><span class="sub sub-s2">2018-08-24
+                                            10:20 PM</span></td>
+                                    <td class="tnx-type"><span
+                                            class="tnx-type-md badge badge-outline badge-warning badge-md">فروش</span><span
+                                            class="tnx-type-sm badge badge-sq badge-outline badge-warning badge-md">B</span>
+                                    </td>
+                                </tr><!-- tr -->
+                            </tbody><!-- tbody -->
+                        </table><!-- .table -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="token-calculator card card-full-height">
+                    <div class="card-innr">
+                        <div class="card-head">
+                            <h4 class="card-title">محاسبه گر ارز دیجیتال </h4>
+                            <p class="card-title-text">مقدار ارز خود را وارد کنید </p>
+                        </div>
+                        <div class="token-calc">
+                            <div class="token-pay-amount"><input id="token-base-amount"
+                                    class="input-bordered input-with-hint" type="text" value="">
+                                <div class="token-pay-currency"><a href="#"
+                                        class="link ucap link-light toggle-tigger toggle-caret">ETH</a>
+                                    <div class="toggle-class dropdown-content">
+                                        <ul class="dropdown-list">
+                                            <li><a href="#">BTC</a></li>
+                                            <li><a href="#">LTC</a></li>
+                                            <li><a href="#">USD</a></li>
+                                            <li><a href="#">USD</a></li>
+                                            <li><a href="#">USD</a></li>
+                                            <li><a href="#">USD</a></li>
+                                            <li><a href="#">USD</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="token-received">
+                                <div class="token-eq-sign">=</div>
+                                <div class="token-received-amount">
+                                    <h5 class="token-amount">123,500.84</h5>
+                                    <div class="token-symbol">تومان </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="token-calc-note note note-plane"><em
+                                class="fas fa-info-circle text-light"></em><span class="note-text text-light">Amount
+                                calculated based current tokens price</span></div>
+                        <div class="token-buy"><a href="#" class="btn btn-primary">Buy Tokens</a></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .row -->
+        <div class="row">
+            <div class="col-xl-8 col-lg-7">
+                <div class="token-sale-graph card card-full-height">
+                    <div class="card-innr">
+                        <div class="card-head has-aside">
+                            <h4 class="card-title">خرید و فروش ارز</h4>
+                            <div class="card-wrap">
+                                <ul role="tablist" id="pills-tab" class="nav nav_tab">
+                                    <li class="nav-item">
+                                        <a href="#tab1" data-toggle="tab" class="nav-link active">ایجاد آگهی</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content card-body">
+                                    <div role="tabpanel" id="tab1" class="tab-pane fade show active">
+                                        <div class="row">
+                                            <div class="form-group col-md-12">
+                                                <label>ارز دیجیتال</label>
+                                                <select class="custom_select">
+                                                    <option value="">نوع ارز دیجیتال</option>
+                                                    <option value="Bitcoin"> BTC بیت کوین</option>
+                                                    <option value="Ethereum">اتریوم</option>
+                                                    <option value="Dashcoin">XRP ریپل</option>
+                                                    <option value="Lightcoin">LTC لایت کوین</option>
+                                                    <option value="Ripple">TRX ترون</option>
+                                                    <option value="Neo">NEO نئو</option>
+                                                    <option value="Neo">WM وب مانی</option>
+                                                    <option value="Neo">PayPal پی پل</option>
+                                                    <option value="Neo">PM پرفکت مانی</option>
+                                                    <option value="Neo">Skrill اسکریل</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>نوع معامله</label>
+                                                <select class="custom_select">
+                                                    <option value="buy">خرید</option>
+                                                    <option value="sell">فروش</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-form-label"> بازه معامله</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="بیشترین مقدار">
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" placeholder="کم ترین مقدار">
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label class="col-form-label">درصداختلاف قیمت </label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control"
+                                                        placeholder="میزان درصد اختلاف قیمت با قیمت واقعی.">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pt-2 col-md-12">
+                                            <button class="btn btn-default">تبت آگهی </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .card -->
+            </div><!-- .col -->
+        </div><!-- .row -->
+    </div><!-- .container -->
+</div><!-- .page-content -->
+{% endblock content %}

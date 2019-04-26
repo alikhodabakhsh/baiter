@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  {% block titel %}
+
+  {% endblock titel %}
+
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/favicon.png' %}">
+  <!-- Bootstrap core CSS-->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="{% static 'assets/avendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <!-- Icon Fonts-->
+  <link href="{% static 'assets/vendor/webfont/css/cryptocoins.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'assets/vendor/webfont/css/simple-line-icons.css' %}" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="{% static 'assets/css/admin.css' %}" rel="stylesheet">
+  <link id="layoutstyle" rel="stylesheet" href="{% static 'color/theme.css' %}">
+</head>
+
+<body>
+  <div class="bg_image h-100">
+      <div class="lr_wrap">
+          <div class="card-body">
+            <div class="lr_icon text-center">
+            <img src="{% static 'assets/images/logo_icon.png' %}" alt="logo"/>
+            </div>
+
+            {% block account_ti %}
+            <h6 class="my-4 text-center text-uppercase">به بایتر خوش آمدید </h6>
+            {% endblock account_ti %}
+
+            {% block form %}
+
+            {% endblock form %}
+
+            </div>
+          </div>
+        </div>
+  </div>
+  <!-- Bootstrap core JavaScript-->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <!-- Core plugin JavaScript-->
+  <script src="{% static 'assets/vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+</body>
+
+
+</html>

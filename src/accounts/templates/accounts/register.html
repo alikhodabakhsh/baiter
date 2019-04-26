@@ -1,0 +1,33 @@
+{% extends "accounts/base-account.html" %}
+
+{% block titel %}
+<title>register</title>
+{% endblock titel %}
+
+{% block form %}
+<form method="POST">
+    {% csrf_token %}
+    <div class="form-group text-right">
+      <label for="full_name ">نام کاربری </label>
+      <input class="form-control" id="full_name " name="full_name " type="text"  required  placeholder="نام کاربری ">
+    </div>
+    <div class="form-group text-right">
+        <label for="email">ایمیل</label>
+        <input class="form-control" id="email" name="email" type="email" placeholder="ایمیل" required>
+      </div>
+    <div class="form-group text-right">
+      <label for="password1">پسورد</label>
+      <input class="form-control" id="password1" name="password1" type="password"  required  placeholder="پسورد">
+    </div>
+    <div class="form-group text-center">
+      <label for="term-condition">ثبت نام کردن در سایت به معنای پذیرفتن <a class="blue" href="regular-page.html">
+           قوانین است .</a>
+        </label>
+        </div>
+    <button type="submit" class="btn btn-default btn-block">ثبت نام</button>
+  </form>
+  <div class="text-center mt-3">
+    <span class="small">حساب کاربری دارید؟ <a class="blue" href="#">ورود</a></span>
+  </div>
+{% endblock form %}
+  

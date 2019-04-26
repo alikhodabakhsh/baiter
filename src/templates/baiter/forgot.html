@@ -1,0 +1,43 @@
+{% extends 'baiter/base-admin.html' %}
+{% load static %}
+
+
+{% block title %}  
+<title>forgot</title><!-- Vendor Bundle CSS -->
+{% endblock title %}
+
+{% block b %}  
+<body class="page-ath">
+    <div class="page-ath-wrap">
+        <div class="page-ath-content">
+            <div class="page-ath-header"><a href="index.html" class="page-ath-logo"><img src="images/logo.png"
+                        srcset="images/logo2x.png 2x" alt="logo"></a></div>
+            <div class="page-ath-form">
+                <h2 class="page-ath-heading">بازیابی رمز عبور <span>لطفا ایمیل خود را برای بازیابی رمز عبور وارد کنید.</span></h2>
+                <form action="#">
+                    <div class="input-item"><input type="text" placeholder="Your Email" class="input-bordered"></div>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div><button class="btn btn-primary btn-block">ارسال مجدد لینک</button></div>
+                        <div><a href="sign-in.html"> ورود به سیستم</a></div>
+                    </div>
+                    <div class="gaps-2x"></div>
+                </form>
+            </div>
+            <div class="page-ath-footer">
+                <ul class="footer-links">
+                    <li><a href="regular-page.html">حفط حریم خصوصس</a></li>
+                    <li><a href="regular-page.html">شرایط و ضوابط</a></li>
+                    <li>&copy; 2018 TokenWiz.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-ath-gfx">
+            <div class="w-100 d-flex justify-content-center">
+                <div class="col-md-8 col-xl-5"><img src="{% static 'images/ath-gfx.png' %}" alt="image"></div>
+            </div>
+        </div>
+    </div><!-- JavaScript (include all script here) -->
+    <script src="{% static 'assets/js/jquery.bundle7500.js' %}"></script>
+    <script src="{% static 'assets/js/script7500.js' %}"></script>
+</body>
+{% endblock b %}
