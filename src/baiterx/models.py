@@ -10,6 +10,8 @@ class CurrencyQuerySet(models.query.QuerySet):
     def active(self):
         return self.filter(active=True)
 
+    def featured(self):
+        return self.filter(featured=True, active=True)
 
     def search(self, query):
         lookups = (Q(title__icontains=query) | 
@@ -67,7 +69,8 @@ class CurrencyAd(models.Model):
     max_amount = models.IntegerField()
     min_amount = models.IntegerField()
     name_currency = models.CharField(max_length=200)
-    status = models.BooleanField(default=True)
+    active = models.BooleanField(default=True)
+    featured = models.BooleanField(default=False)
     publish_date = models.DateField(default=timezone.now)
     date = models.DateField(default=date.today)
     timestamp = models.DateTimeField(auto_now_add=True)

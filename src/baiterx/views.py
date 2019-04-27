@@ -8,7 +8,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from analytics.mixins import ObjectViewedMixin
 
 
-from .models import CurrencyAd, 
+from .models import CurrencyAd
 
 
 class CurrencyAdFeaturedListView(ListView):
@@ -96,7 +96,7 @@ from wsgiref.util import FileWrapper # this used in django
 from mimetypes import guess_type
 
 from django.conf import settings
-from orders.models import ProductPurchase
+#from orders.models import ProductPurchase
 
 
 
