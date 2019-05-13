@@ -8450,6 +8450,7 @@ a.text-dark:focus, a.text-dark:hover {
     speak: none;
     font-style: normal;
     font-weight: 400;
+    margin-left: 4px;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -16292,13 +16293,7 @@ img.mfp-img {
     }
 }
 
-.demo-panel {
-    position: fixed;
-    top: 25%;
-    right: 0;
-    z-index: 88;
-    background: #222
-}
+
 
 .demo-list a:focus, .demo-list a:hover {
     color: #fff

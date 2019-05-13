@@ -1,0 +1,242 @@
+{% extends 'base-admin.html' %}
+{% load static %}
+
+
+
+{% block content %}
+<div class="page-header page-header-kyc">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7 text-center">
+                <h2 class="page-title">تأیید هویت خود را آغاز کنید</h2>
+                <p class="large">هویت خود را برای خرید و فروش تأیید کنید</p>
+            </div>
+        </div>
+    </div><!-- .container -->
+</div><!-- .page-header -->
+<div class="page-content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+                <div class="kyc-form-steps card mx-lg-4">
+                    <div class="form-step form-step1">
+                        <div class="form-step-head card-innr">
+                            <div class="step-head">
+                                <div class="step-number">01</div>
+                                <div class="step-head-text">
+                                    <h4>اطلاعات شخصی</h4>
+                                    <p>اطلاعات شخصی ساده شما برای شناسایی مورد نیاز است</p>
+                                </div>
+                            </div>
+                        </div><!-- .step-head -->
+                        <div class="form-step-fields card-innr">
+                            <div class="note note-plane note-light-alt note-md pdb-1x"><em
+                                    class="fas fa-info-circle"></em>
+                                <p>لطفا با دقت تایپ کنید و فرم را با اطلاعات شخصی خود پر کنید. هنگامی که فرم را ارسال
+                                    کردید، نمی توانید این اطلاعات را ویرایش کنید.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-item input-with-label"><label class="input-item-label">نام
+                                            <span class="text-danger">*</span></label><input class="input-bordered"
+                                            type="text"></div><!-- .input-item -->
+                                </div><!-- .col -->
+                                <div class="col-md-6">
+                                    <div class="input-item input-with-label"><label class="input-item-label">نام
+                                            خانوادگی
+                                            <span class="text-danger">*</span></label><input class="input-bordered"
+                                            type="text"></div><!-- .input-item -->
+                                </div><!-- .col -->
+                                <div class="col-md-6">
+                                    <div class="input-item input-with-label"><label class="input-item-label">شماره
+                                            موبایل
+                                            <span class="text-danger">*</span></label><input class="input-bordered"
+                                            type="text"></div><!-- .input-item -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div><!-- .step-fields -->
+                    </div>
+                    <div class="form-step form-step2">
+                        <div class="form-step-head card-innr">
+                            <div class="step-head">
+                                <div class="step-number">02</div>
+                                <div class="step-head-text">
+                                    <h4>آپلود اسناد </h4>
+                                    <p>برای تأیید هویت خود، لطفا هر سند خود را آپلود کنید</p>
+                                </div>
+                            </div>
+                        </div><!-- .step-head -->
+                        <div class="form-step-fields card-innr">
+                            <div class="note note-plane note-light-alt note-md pdb-0-5x"><em
+                                    class="fas fa-info-circle"></em>
+                                <p>برای تکمیل، لطفا هر یک از سند شخصی زیر را آپلود کنید.</p>
+                            </div>
+                            <div class="gaps-2x"></div>
+                            <ul class="nav nav-tabs nav-tabs-bordered row flex-wrap guttar-20px" role="tablist">
+                                <li class="nav-item flex-grow-0"><a class="nav-link d-flex align-items-center active"
+                                        data-toggle="tab" href="#passport">
+                                        <div class="nav-tabs-icon"><img src="{% static 'images/icon-passport.png' %} "
+                                                alt="icon"><img src="{% static 'images/icon-passport-color.png' %} "
+                                                alt="icon">
+                                        </div><span>پاسپورت </span>
+                                    </a></li>
+                                <li class="nav-item flex-grow-0"><a class="nav-link d-flex align-items-center"
+                                        data-toggle="tab" href="#national-card">
+                                        <div class="nav-tabs-icon"><img
+                                                src="{% static 'images/icon-national-id.png' %} " alt="icon"><img
+                                                src="{% static 'images/icon-national-id-color.png' %}" alt="icon">
+                                        </div><span>کارت ملی </span>
+                                    </a></li>
+                            </ul><!-- .nav-tabs-line -->
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="passport">
+                                    <h5 class="text-secondary font-bold">برای جلوگیری از تاخیر در تأیید حساب، لطفا
+                                        اطمینان حاصل کنید:</h5>
+                                    <ul class="list-check">
+                                        <li>اعتبار اسناد نباید منقضی شده باشند.</li>
+                                        <li>سند باید به طور کامل و به وضوح قابل مشاهده باشد.</li>
+                                        <li>اطمینان حاصل کنید که هیچ انعکاس نور روی کارت وجود ندارد.</li>
+                                    </ul>
+                                    <div class="gaps-2x"></div>
+                                    <h5 class="font-mid">اینجا پاسپورت خود را آپلود کنید</h5>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-8">
+                                            <div class="upload-box">
+                                                <div class="upload-zone">
+                                                    <div class="dz-message" data-dz-message><span
+                                                            class="dz-message-text">فایل را بکشید و رها کنید</span><span
+                                                            class="dz-message-or">یا</span><button
+                                                            class="btn btn-primary">انتخاب کنید</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 d-none d-sm-block">
+                                            <div class="mx-md-4"><img src="{% static 'images/vector-passport.png' %}"
+                                                    alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-3x"></div>
+                                    <h5 class="font-mid">اینجا سلفی با پاسپورت خود را آپلود کنید.</h5>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-8">
+                                            <div class="upload-box">
+                                                <div class="upload-zone">
+                                                    <div class="dz-message" data-dz-message><span
+                                                            class="dz-message-text">فایل را بکشید و رها کنید</span><span
+                                                            class="dz-message-or">یا</span><button
+                                                            class="btn btn-primary">انتخاب کنید</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 d-none d-sm-block">
+                                            <div class="mx-md-4"><img src="{% static 'images/vector-id-back.png' %}"
+                                                    alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- .tab-pane -->
+                                <div class="tab-pane fade" id="national-card">
+                                    <h5 class="text-secondary font-bold">برای جلوگیری از تاخیر در تأیید حساب، لطفا
+                                        اطمینان حاصل کنید:</h5>
+                                    <ul class="list-check">
+                                        <li>اعتبار اسناد نباید منقضی شده باشند.</li>
+                                        <li>سند باید به طور کامل و به وضوح قابل مشاهده باشد.</li>
+                                        <li>اطمینان حاصل کنید که هیچ انعکاس نور روی کارت وجود ندارد.</li>
+                                    </ul>
+                                    <div class="gaps-2x"></div>
+                                    <h5 class="font-mid">اینجا کارت ملی خود را آپلود کنید</h5>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-8">
+                                            <div class="upload-box">
+                                                <div class="upload-zone">
+                                                    <div class="dz-message" data-dz-message><span
+                                                            class="dz-message-text">فایل را بکشید و رها کنید</span><span
+                                                            class="dz-message-or">یا</span><button
+                                                            class="btn btn-primary">انتخاب کنید</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 d-none d-sm-block">
+                                            <div class="mx-md-4"><img src="{% static 'images/vector-id-front.png' %}"
+                                                    alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gaps-3x"></div>
+                                    <h5 class="font-mid">اینجا سلفی با کارت ملی خود را آپلود کنید.</h5>
+                                    <div class="row align-items-center">
+                                        <div class="col-sm-8">
+                                            <div class="upload-box">
+                                                <div class="upload-zone">
+                                                    <div class="dz-message" data-dz-message><span
+                                                            class="dz-message-text">فایل را بکشید و رها کنید</span><span
+                                                            class="dz-message-or">یا</span><button
+                                                            class="btn btn-primary">انتخاب کنید</button></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4 d-none d-sm-block">
+                                            <div class="mx-md-4"><img src="{% static 'images/vector-id-back.png' %}"
+                                                    alt="vector">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- .tab-pane -->
+                            </div><!-- .tab-content -->
+                        </div><!-- .step-fields -->
+                    </div>
+                    <div class="form-step form-step3">
+                        <div class="form-step-head card-innr">
+                            <div class="step-head">
+                                <div class="step-number">03</div>
+                                <div class="step-head-text">
+                                    <h4>اطلاعات بانکی</h4>
+                                    <p>اطلاعات کارت بانکی خود را وارد کنید.</p>
+                                </div>
+                            </div>
+                        </div><!-- .step-head -->
+
+                        <div class="form-step-fields card-innr">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-item input-with-label">
+                                        <h5 class="text-secondary font-bold">کارت بانکی باید با مدارک و اطلاعات شخصی مطابقت
+                                            داشته باشد.</h5>
+                                        <label for="swalllet"></label>
+                                        <input class="form-control" id="bank_card_number" name="bank_card_number"
+                                            type="number" placeholder="شماره کارت بانک" required>
+                                    </div><!-- .input-item -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="input-item input-with-label">
+                                        <label for="swalllet"></label>
+                                        <input class="form-control" id="bank_card_number" name="bank_card_number"
+                                            type="number" placeholder="شماره شبا بانک" required>
+                                    </div><!-- .input-item -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div>
+
+
+                        <div class="form-step form-step-final">
+                            <div class="form-step-fields card-innr">
+                                <div class="input-item"><input class="input-checkbox input-checkbox-md"
+                                        id="term-condition" type="checkbox"><label for="term-condition">موافقت با
+                                        <a href="#">شرایط</a> و <a href="#"> حفظ حریم خصوصی.</a></label>
+                                </div>
+                                <div class="input-item"><input class="input-checkbox input-checkbox-md"
+                                        id="info-currect" type="checkbox"><label for="info-currect">تمام اطلاعات شخصی که
+                                        وارد کردم صحیح است</label></div>
+                                <div class="gaps-1x"></div><a href="kyc-thank-you.html" class="btn btn-primary">ارسال
+                                    مدارک برای تأیید</a>
+                            </div><!-- .step-fields -->
+                        </div>
+                    </div><!-- .card -->
+                </div>
+            </div>
+        </div><!-- .container -->
+    </div><!-- .page-content -->
+    {% endblock content %}

@@ -170,3 +170,46 @@ def RegisterSuccess(request):
          
      }
     return render(request, "accounts/register-success.html", context)
+
+
+def Dashboard(request):
+    context = {
+    }
+    return render(request, "accounts/dashboard.html", context)
+
+
+def Transactions(request):
+    context = {
+    }
+    return render(request, "accounts/transactions.html", context)
+
+def TransactionDetails(request):
+    context = {
+    }
+    return render(request, "accounts/transaction-details.html", context)
+
+def Profile(request):
+    context = {
+    }
+    return render(request, "accounts/profile.html", context)
+
+def KycApplication(request):
+    context = {
+    }
+    return render(request, "accounts/Kyc-application.html", context)
+
+def KycForm(request):
+    context = {
+    }
+    return render(request, "accounts/Kyc-form.html", context)
+
+
+def Financial(request):
+    context = {
+    }
+    return render(request, "financial/financial.html", context)
+
+def BankAccount(request):
+    context = {
+    }
+    return render(request, "financial/bank-account.html", context)

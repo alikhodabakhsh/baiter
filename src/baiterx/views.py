@@ -77,15 +77,15 @@ class CurrencyAdDetailSlugView(ObjectViewedMixin, DetailView):
 
     def get_object(self, *args, **kwargs):
         request = self.request
-        slug = self.kwargs.get('name_currency')
+        slug = self.kwargs.get('slug')
 
         #instance = get_object_or_404(Product, slug=slug, active=True)
         try:
-            instance = CurrencyAd.objects.get(name_currency=name_currency, active=True)
-        except Product.DoesNotExist:
+            instance = CurrencyAd.objects.get(slug=slug, active=True)
+        except CurrencyAd.DoesNotExist:
             raise Http404("Not found..")
-        except Product.MultipleObjectsReturned:
-            qs = Product.objects.filter(name_currency=name_currency, active=True)
+        except CurrencyAd.MultipleObjectsReturned:
+            qs = CurrencyAd.objects.filter(slug=slug, active=True)
             instance = qs.first()
         except:
             raise Http404("Uhhmmm ")

@@ -1,0 +1,184 @@
+{% extends 'base-admin.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="page-content">
+    <div class="container">
+        <div class="row">
+            <div class="main-content col-lg-8">
+                <div class="content-area card">
+                    <div class="card-innr">
+                        <div class="card-head">
+                            <h4 class="card-title">بخش مالی</h4>
+                        </div>
+                        <ul class="nav nav-tabs nav-tabs-line" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" data-toggle="tab"
+                                    href="#personal-data">افزایش اعتبار </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#settings">گزارشات مالی
+                                </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cart"> حساب بانکی </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#password">درخواست واریز به
+                                    حساب</a>
+                            </li>
+                        </ul><!-- .nav-tabs-line -->
+                        <div class="tab-content" id="profile-details">
+                            <div class="tab-pane fade show active" id="personal-data">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-item input-with-label"><label for="full-name"
+                                                class="input-item-label">مبلغ به تومان</label><input
+                                                class="input-bordered" type="text" id="full-name" name="full-name">
+                                        </div>
+                                        <!-- .input-item -->
+                                    </div>
+                                </div><!-- .row -->
+                                <div class="gaps-1x"></div><!-- 10px gap -->
+                                <div class="d-sm-flex justify-content-between align-items-center"><button
+                                        class="btn btn-primary">افزایش اعتبار</button>
+                                    <div class="gaps-2x d-sm-none"></div><span class="text-success"><em
+                                            class="ti ti-check-box"></em>افزایش اعتبار به مبلغ 1200000 تومان</span>
+                                </div>
+
+                            </div><!-- .tab-pane -->
+                            <div class="tab-pane fade" id="settings">
+                                <table class="data-table dt-init user-tnx">
+                                    <thead>
+                                        <tr class="data-item data-head">
+                                            <th class="data-col dt-tnxno">#</th>
+                                            <th class="data-col dt-tnxno">وضعیت تراکنش</th>
+                                            <th class="data-col dt-token">بانک</th>
+                                            <th class="data-col dt-amount">شماره پیگیری</th>
+                                            <th class="data-col dt-usd-amount">مبلغ</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="data-item">
+                                            <td class="data-col dt-type"><span
+                                                    class="dt-type-md badge badge-outline badge-success badge-md">152</span>
+                                            </td>
+                                            <td class="data-col dt-tnxno">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="data-state data-state-approved"><span
+                                                            class="d-none">Approved</span>
+                                                    </div>
+                                                    <div class="fake-class"><span class="sub sub-date">2018-08-24
+                                                            10:45PM</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="data-col dt-token"><span class="sub sub-symbol">ملی</span></td>
+                                            <td class="data-col dt-amount"><span class="lead amount-pay">64585648
+                                                    </span</td> <td class="data-col dt-usd-amount"><span
+                                                        class="lead amount-pay">245.52</span><span
+                                                        class="sub sub-symbol">تومان </span></td>
+                                            <td class="data-col text-left"><a href="transaction-details.html"
+                                                    class="btn btn-light-alt btn-xs btn-icon"><em
+                                                        class="ti ti-eye"></em></a></td>
+                                        </tr><!-- .data-item -->
+
+                                    </tbody>
+                                </table>
+                            </div><!-- .tab-pane -->
+                            <div class="tab-pane fade" id="cart">
+                                <table class="data-table dt-init user-tnx">
+                                    <thead>
+                                        <tr class="data-item data-head">
+                                            <th class="data-col dt-tnxno">#</th>
+                                            <th class="data-col dt-tnxno"> نام و نام خانوادگی</th>
+                                            <th class="data-col dt-tnxno"> شماره کارت</th>
+                                            <th class="data-col dt-token">شماره شبا</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="data-item">
+                                            <td class="data-col dt-type"><span
+                                                    class="dt-type-md badge badge-outline badge-success badge-md">1</span>
+                                            </td>
+                                            <td class="data-col dt-token"><span class="sub sub-symbol">ali
+                                                    khodabakshh</span></td>
+                                            <td class="data-col dt-amount"><span
+                                                    class="lead amount-pay">645855454545454648</span</td> <td
+                                                        class="data-col dt-usd-amount"><span
+                                                        class="lead amount-pay">Ir6454854548548854</span></td>
+                                            <td class="data-col text-left">
+                                                <div class="relative d-inline-block d-md-none"><a href="#"
+                                                        class="btn btn-light-alt btn-xs btn-icon toggle-tigger"><em
+                                                            class="ti ti-more-alt"></em></a>
+                                                    <div
+                                                        class="toggle-class dropdown-content dropdown-content-center-left pd-2x">
+                                                        <ul class="data-action-list">
+                                                            <li><a href="#"
+                                                                    class="btn btn-danger-alt btn-xs btn-icon"><em
+                                                                        class="ti ti-trash"></em></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <ul class="data-action-list d-none d-md-inline-flex">
+
+                                                    <li><a href="#" class="btn btn-danger-alt btn-xs btn-icon"><em
+                                                                class="ti ti-trash"></em></a></li>
+                                                </ul>
+                                            </td>
+                                        </tr><!-- .data-item -->
+
+                                    </tbody>
+                                </table>
+                                <div class="gaps-1x"></div><!-- 10px gap -->
+                                <div class="d-sm-flex justify-content-between align-items-center"><a href="{% url 'account:bank-account' %}"><button
+                                    class="btn btn-primary">افزون حساب بانکی</button></a>
+                                </div>
+                            </div><!-- .tab-pane -->
+                            <div class="tab-pane fade" id="password">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="input-item input-with-label"><label for="full-name"
+                                                class="input-item-label">مبلغ به تومان</label><input
+                                                class="input-bordered" type="text" id="full-name" name="full-name">
+                                        </div>
+                                        <!-- .input-item -->
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>واریز به حساب </label>
+                                        <select class="custom_select">
+                                            <option value="id-cart">6037991751973953</option>
+
+                                        </select>
+                                    </div>
+                                </div><!-- .row -->
+
+                                <div class="d-sm-flex justify-content-between align-items-center"><button
+                                        class="btn btn-primary">ثبت درخواست</button>
+                                </div>
+
+                            </div><!-- .tab-pane -->
+
+                        </div><!-- .tab-content -->
+                    </div><!-- .card-innr -->
+                </div><!-- .card -->
+
+            </div><!-- .col -->
+            <div class="aside sidebar-right col-lg-4">
+                <div class="account-info card">
+                    <div class="kyc-info card">
+                        <div class="card-innr">
+                            <h6 class="card-title card-title-sm">تایید هویت</h6>
+                            <p>برای پیروی از مقررات، کاربر باید تایید هویت شود.
+                            </p>
+                            <p class="lead text-light pdb-0-5x">شما درخواست تایید هویت خود را ارائه ندادهاید.</p><a
+                                href="{% url 'account:kyc-form' %}" class="btn btn-primary btn-block">برای ادامه کلیک
+                                کنید</a>
+                            <h6 class="kyc-alert text-danger">* تایید هویت برای خرید و فروش الزامی است.</h6>
+                        </div>
+                    </div>
+                </div><!-- .col -->
+            </div><!-- .container -->
+        </div><!-- .container -->
+    </div><!-- .page-content -->
+    {% endblock content %}

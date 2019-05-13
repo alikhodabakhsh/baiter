@@ -41,7 +41,6 @@ from .views import home_page, about_page, contact_page
 
 urlpatterns = [
     url(r'^$', home_page, name='home'),
-    url(r'^about/$', about_page, name='about'),
     url(r'^accounts/login/$', RedirectView.as_view(url='/login')),
     url(r'^accounts/$', RedirectView.as_view(url='/account')),
     url(r'^account/', include("accounts.urls", namespace='account')),
@@ -67,7 +66,7 @@ urlpatterns = [
     url(r'^bootstrap/$', TemplateView.as_view(template_name='bootstrap/example.html')),
     # url(r'^library/$', LibraryView.as_view(), name='library'),
     # url(r'^orders/', include("orders.urls", namespace='orders')),
-    url(r'^exchange/currency/', include("baiterx.urls", namespace='products')),
+    url(r'^products/', include("baiterx.urls", namespace='products')),
     # url(r'^search/', include("search.urls", namespace='search')),
     # url(r'^settings/$', RedirectView.as_view(url='/account')),
     # url(r'^settings/email/$', MarketingPreferenceUpdateView.as_view(), name='marketing-pref'),

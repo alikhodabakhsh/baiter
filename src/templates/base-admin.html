@@ -52,8 +52,8 @@
                                     <div class="user-status-balance">12,000,000 <small>تومان</small></div>
                                 </div>
                                 <ul class="user-links">
-                                    <li><a href="profile.html"><i class="ikon-user"></i>پروفایل</a></li>
-                                    <li><a href="#"><i class="ti ti-id-badge"></i>احراز هویت </a></li>
+                                    <li><a href="{% url 'account:profile' %}"><i class="ikon-user"></i>پروفایل</a></li>
+                                    <li><a href="#"><i class="ti ti-id-badge"></i>تایید هویت </a></li>
                                 </ul>
                                 <ul class="user-links bg-light">
                                     <li><a href="sign-in.html"><i class="ti ti-power-off"></i>خروج</a></li>
@@ -72,15 +72,15 @@
             <div class="container">
                 <div class="navbar-innr">
                     <ul class="navbar-menu">
-                        <li><a href="index-2.html"><em class="ikon ikon-dashboard"></em>داشبورد</a></li>
-                        <li><a href="buy-token.html"><em class="ikon ikon-coins"></em> خرید ارز </a></li>
-                        <li><a href="buy-token.html"><em class="ikon ikon-coins"></em>فروش ارز</a></li>
-                        <li><a href="transactions.html"><em class="ikon ikon-transactions"></em>معاملات</a></li>
-                        <li><a href="profile.html"><em class="ikon ikon-user"></em> پروفایل</a></li>
+                        <li><a href="{% url 'account:dashboard' %}"><em class="ikon ikon-dashboard"></em>داشبورد</a></li>
+                        <li><a href="{% url 'products:list' %}"><em class="ikon ikon-coins"></em> خرید و فروش ارز </a></li>
+                        <li><a href="{% url 'account:transactions' %}"><em class="ikon ikon-transactions"></em>معاملات</a></li>
+                        <li><a href="{% url 'account:financial' %}"><em class="ikon ikon-coins"></em>مالی</a></li>
+                        <li><a href="{% url 'account:profile' %}"><em class="ikon ikon-user"></em> پروفایل</a></li>
                     </ul>
                     <ul class="navbar-btns">
-                        <li><a href="kyc-application.html" class="btn btn-sm btn-outline btn-light"><em
-                                    class="text-primary ti ti-files"></em><span>احراز هویت </span></a></li>
+                        <li><a href="{% url 'account:kyc-application' %}" class="btn btn-sm btn-outline btn-light"><em
+                                    class="text-primary ti ti-files"></em><span>تایید هویت </span></a></li>
                         <li class="d-none"><span class="badge badge-outline badge-success badge-lg"><em
                                     class="text-success ti ti-files mgr-1x"></em><span class="text-success">تایید
                                     شده</span></span></li>

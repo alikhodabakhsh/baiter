@@ -1,13 +1,872 @@
-{% extends "base.html" %}
+{% extends "base-admin.html" %}
+{% load static %}
+
+{% block title %}
+<title>لیست آگهی های ارز دیجیتال</title><!-- Vendor Bundle CSS -->
+{% endblock title %}
+
+
 
 {% block content %}
-        <div class='row'>
 
-    {% for obj in object_list %}
-        <div class='col my-3'>
-        {% include 'products/snippets/card.html' with instance=obj %}  
-        
+
+
+
+
+
+
+
+
+<div id="fullpage" class="content_wrapper">
+    <div id="main">
+        <div class="simple-container">
+
+            <div class="stm_ico_archive">
+                <div class="vc_custom_heading text_align_center">
+                    <h1 class="text-center">خرید و فروش ارز دیجیتال </h1>
+                </div>
+
+                <div class="container">
+                        <div class="tabs">
+                            <div class="tab-2">
+                                <div class="text-center">
+                                    <label for="tab2-1">
+                                        <h3>خریدار</h3>
+                                    </label>
+                                </div>
+                                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                                <div class="container">
+                                        <div class="stm_ico_archive__list">
+                                            <div class="stm_ico_grid">
+                                                <div class="stm_ico_grid__single has_time sponsored_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/ABYSS-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/ABYSS-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/ABYSS-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="ABYSS-logo-150x150"
+                                                                title="ABYSS-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/ABYSS-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__sponsored">
+                                                                    Sponsored </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="the-abyss/index.html" title="The Abyss"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    The Abyss </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/data-services/index.html"
+                                                                title="Data Services">Data Services</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                $50,000,000 </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 6 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/TTC-logo-1-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/TTC-logo-1-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/TTC-logo-1-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="TTC-logo-1-150x150"
+                                                                title="TTC-logo-1-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/TTC-logo-1-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__neutral">
+                                                                    Neutral </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="ttc-protocol/index.html" title="TTC Protocol"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    TTC Protocol </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/data-services/index.html"
+                                                                title="Data Services">Data Services</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$23,000,000</span> <label>/</label>
+                                                                <bdo>$16,000,000</bdo>
+                                                                <span class="percent">143%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 8 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/HybridBlock-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/HybridBlock-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/HybridBlock-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="HybridBlock-logo-150x150"
+                                                                title="HybridBlock-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/HybridBlock-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__neutral">
+                                                                    Neutral </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="hybridblock-2/index.html" title="HybridBlock 2"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    HybridBlock 2 </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/data-services/index.html"
+                                                                title="Data Services">Data Services</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$130,000</span> <label>/</label>
+                                                                <bdo>$1,000,000</bdo>
+                                                                <span class="percent">13%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 8 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Unibright-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Unibright-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Unibright-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="Unibright-logo-150x150"
+                                                                title="Unibright-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Unibright-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__low">
+                                                                    Low </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="blockchain-terminal/index.html" title="Blockchain Terminal"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Blockchain Terminal </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/blockchain/index.html"
+                                                                title="Blockchain">Blockchain</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                $50,000,000 </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 14 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time trending_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Academy-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Academy-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Academy-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="Academy-logo-150x150"
+                                                                title="Academy-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Academy-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__low">
+                                                                    Low </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="academy/index.html" title="Academy"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Academy </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/advertising/index.html"
+                                                                title="Advertising">Advertising</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                $50,000,000 </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 28 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time trending_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Mainframe-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Mainframe-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Mainframe-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="Mainframe-logo-150x150"
+                                                                title="Mainframe-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Mainframe-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__neutral">
+                                                                    Neutral </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="mainframe/index.html" title="Mainframe"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Mainframe </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/advertising/index.html"
+                                                                title="Advertising">Advertising</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$6,000,000</span> <label>/</label>
+                                                                <bdo>$8,000,000</bdo>
+                                                                <span class="percent">75%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 28 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time sponsored_ico trending_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/logo-150x150-120x120.png 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/logo-150x150-60x60.png"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/logo-150x150-60x60.png"
+                                                                width="60" height="60" alt="logo-150x150" title="logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/logo-150x150-120x120.png 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__sponsored">
+                                                                    Sponsored </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="morpheus-network/index.html" title="Morpheus Network"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Morpheus Network </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/blockchain/index.html"
+                                                                title="Blockchain">Blockchain</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$6,700,000</span> <label>/</label>
+                                                                <bdo>$36,000,000</bdo>
+                                                                <span class="percent">18%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            June 22 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time sponsored_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/PolySwarm-logo-300x300-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/PolySwarm-logo-300x300-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/PolySwarm-logo-300x300-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="PolySwarm-logo-300x300-150x150"
+                                                                title="PolySwarm-logo-300x300-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/PolySwarm-logo-300x300-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__sponsored">
+                                                                    Sponsored </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="polyswarm/index.html" title="PolySwarm"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    PolySwarm </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/blockchain/index.html"
+                                                                title="Blockchain">Blockchain</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$2,000,000</span> <label>/</label>
+                                                                <bdo>$80,000,000</bdo>
+                                                                <span class="percent">2%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            July 15 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time trending_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Actus-Logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Actus-Logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Actus-Logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="Actus-Logo-150x150"
+                                                                title="Actus-Logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Actus-Logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__medium">
+                                                                    Medium </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="auctus/index.html" title="Auctus"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Auctus </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/advertising/index.html"
+                                                                title="Advertising">Advertising</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                Not set </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            July 13 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/03/Havven_icon-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/03/Havven_icon-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/03/Havven_icon-60x60.jpg"
+                                                                width="60" height="60" alt="Havven_icon" title="Havven_icon"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/03/Havven_icon-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__neutral">
+                                                                    Neutral </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="havven/index.html" title="Havven"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Havven </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/advertising/index.html"
+                                                                title="Advertising">Advertising</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                Not set </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 28 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                
+                                            <div class="stm_ico_pagination">
+                                                <span aria-current="page" class="page-numbers current">1</span>
+                                                <a class="page-numbers" href="indexcb97.html?stm_page=2&amp;type=finished">2</a>
+                                                <a class="next page-numbers" href="indexcb97.html?stm_page=2&amp;type=finished"><i
+                                                        class="stm-stm14_right_arrow"></i></a> </div>
+                
+                
+                                        </div>
+                                    </div>
+
+                            </div>
+
+
+
+
+
+                            <div class="tab-2 ">
+                                <div class="text-center">
+                                   <label for="tab2-2" >
+                                       <h3>فروشنده</h3>
+                                   </label>
+                                </div>
+                                <input id="tab2-2" name="tabs-two" type="radio">
+                                <div class="container">
+                                        <div class="stm_ico_archive__list">
+                                            <div class="stm_ico_grid">
+                                                <div class="stm_ico_grid__single has_time sponsored_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/ABYSS-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/ABYSS-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/ABYSS-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="ABYSS-logo-150x150"
+                                                                title="ABYSS-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/ABYSS-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__sponsored">
+                                                                    Sponsored </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="the-abyss/index.html" title="The Abyss"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    The Abyss </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/data-services/index.html"
+                                                                title="Data Services">Data Services</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                $50,000,000 </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 6 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/TTC-logo-1-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/TTC-logo-1-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/TTC-logo-1-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="TTC-logo-1-150x150"
+                                                                title="TTC-logo-1-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/TTC-logo-1-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__neutral">
+                                                                    Neutral </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="ttc-protocol/index.html" title="TTC Protocol"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    TTC Protocol </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/data-services/index.html"
+                                                                title="Data Services">Data Services</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$23,000,000</span> <label>/</label>
+                                                                <bdo>$16,000,000</bdo>
+                                                                <span class="percent">143%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 8 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/HybridBlock-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/HybridBlock-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/HybridBlock-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="HybridBlock-logo-150x150"
+                                                                title="HybridBlock-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/HybridBlock-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__neutral">
+                                                                    Neutral </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="hybridblock-2/index.html" title="HybridBlock 2"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    HybridBlock 2 </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/data-services/index.html"
+                                                                title="Data Services">Data Services</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$130,000</span> <label>/</label>
+                                                                <bdo>$1,000,000</bdo>
+                                                                <span class="percent">13%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 8 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Unibright-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Unibright-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Unibright-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="Unibright-logo-150x150"
+                                                                title="Unibright-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Unibright-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__low">
+                                                                    Low </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="blockchain-terminal/index.html" title="Blockchain Terminal"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Blockchain Terminal </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/blockchain/index.html"
+                                                                title="Blockchain">Blockchain</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                $50,000,000 </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 14 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time trending_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Academy-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Academy-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Academy-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="Academy-logo-150x150"
+                                                                title="Academy-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Academy-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__low">
+                                                                    Low </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="academy/index.html" title="Academy"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Academy </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/advertising/index.html"
+                                                                title="Advertising">Advertising</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                $50,000,000 </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 28 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time trending_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Mainframe-logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Mainframe-logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Mainframe-logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="Mainframe-logo-150x150"
+                                                                title="Mainframe-logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Mainframe-logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__neutral">
+                                                                    Neutral </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="mainframe/index.html" title="Mainframe"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Mainframe </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/advertising/index.html"
+                                                                title="Advertising">Advertising</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$6,000,000</span> <label>/</label>
+                                                                <bdo>$8,000,000</bdo>
+                                                                <span class="percent">75%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 28 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time sponsored_ico trending_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/logo-150x150-120x120.png 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/logo-150x150-60x60.png"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/logo-150x150-60x60.png"
+                                                                width="60" height="60" alt="logo-150x150" title="logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/logo-150x150-120x120.png 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__sponsored">
+                                                                    Sponsored </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="morpheus-network/index.html" title="Morpheus Network"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Morpheus Network </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/blockchain/index.html"
+                                                                title="Blockchain">Blockchain</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$6,700,000</span> <label>/</label>
+                                                                <bdo>$36,000,000</bdo>
+                                                                <span class="percent">18%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            June 22 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time sponsored_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/PolySwarm-logo-300x300-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/PolySwarm-logo-300x300-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/PolySwarm-logo-300x300-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="PolySwarm-logo-300x300-150x150"
+                                                                title="PolySwarm-logo-300x300-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/PolySwarm-logo-300x300-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__sponsored">
+                                                                    Sponsored </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="polyswarm/index.html" title="PolySwarm"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    PolySwarm </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/blockchain/index.html"
+                                                                title="Blockchain">Blockchain</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal in_progress">
+                                                                <span>$2,000,000</span> <label>/</label>
+                                                                <bdo>$80,000,000</bdo>
+                                                                <span class="percent">2%</span>
+                                                            </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            July 15 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time trending_ico s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Actus-Logo-150x150-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Actus-Logo-150x150-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Actus-Logo-150x150-60x60.jpg"
+                                                                width="60" height="60" alt="Actus-Logo-150x150"
+                                                                title="Actus-Logo-150x150"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/04/Actus-Logo-150x150-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__medium">
+                                                                    Medium </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="auctus/index.html" title="Auctus"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Auctus </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/advertising/index.html"
+                                                                title="Advertising">Advertising</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                Not set </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            July 13 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                                <div class="stm_ico_grid__single has_time s_logo">
+                                                    <div class="stm_ico_grid__date">
+                                                        <div class="stm_lazyload" style="padding-bottom:0%"><img
+                                                                data-srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/03/Havven_icon-120x120.jpg 2x"
+                                                                class=" lazyloaded"
+                                                                src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/03/Havven_icon-60x60.jpg"
+                                                                data-src="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/03/Havven_icon-60x60.jpg"
+                                                                width="60" height="60" alt="Havven_icon" title="Havven_icon"
+                                                                srcset="https://crypterio.scdn8.secure.raxcdn.com/icolisting/wp-content/uploads/sites/11/2018/03/Havven_icon-120x120.jpg 2x">
+                                                        </div>
+                                                    </div>
+                                                    <div class="stm_ico_grid__content">
+                                                        <div class="clearfix">
+                                                            <div class="pull-left">
+                                                                <div class="stm_ico_rate stm_ico_rate__neutral">
+                                                                    Neutral </div>
+                                                            </div>
+                                                            <div class="stm_ico_grid__main_info">
+                                                                <a href="havven/index.html" title="Havven"
+                                                                    class="stm_ico_grid__title no_deco">
+                                                                    Havven </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="stm_ico_grid__category">
+                                                            <a href="../ico_category/advertising/index.html"
+                                                                title="Advertising">Advertising</a> </div>
+                                                        <div class="stm_ico_grid__goals heading_font">
+                                                            <div class="stm_ico_goal">
+                                                                <span>Goal:</span>
+                                                                Not set </div>
+                                                        </div>
+                
+                                                        <div class="days_left">
+                                                            April 28 ended on </div>
+                
+                                                    </div>
+                                                </div>
+                                            </div>
+                
+                
+                                            <div class="stm_ico_pagination">
+                                                <span aria-current="page" class="page-numbers current">1</span>
+                                                <a class="page-numbers" href="indexcb97.html?stm_page=2&amp;type=finished">2</a>
+                                                <a class="next page-numbers" href="indexcb97.html?stm_page=2&amp;type=finished"><i
+                                                        class="stm-stm14_right_arrow"></i></a> </div>
+                
+                
+                                        </div>
+                                    </div>
+
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+
         </div>
-    {% endfor %}
-</div>
-{% endblock %}
+        <!--.container-->
+    </div>
+    <!--#main-->
+
+
+
+    {% endblock content %}

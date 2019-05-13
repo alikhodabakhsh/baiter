@@ -15,6 +15,8 @@ def home_page(request):
     context["premium_content"] = "YEAHHHHHH"
     return render(request, "baiter/home_page.html", context)
 
+
+
 def about_page(request):
     context = {
         "title":"About Page",

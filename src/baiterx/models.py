@@ -64,6 +64,7 @@ class Category(models.Model):
 
 class CurrencyAd(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
+    slug = models.SlugField(blank=True, unique=True)
     username = models.ForeignKey(User, on_delete=models.PROTECT, related_name='currencyads')
     category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='currencyads')
     max_amount = models.IntegerField()
@@ -81,13 +82,13 @@ class CurrencyAd(models.Model):
 
     def get_absolute_url(self):
         #return "/products/{slug}/".format(slug=self.slug)
-        return reverse("products:detail", kwargs={"name_currency": self.name_currency})
+        return reverse("products:detail", kwargs={"slug": self.slug})
 
     def __str__(self):
-        return self.name_currency
+        return self.slug
 
     def __unicode__(self):
-        return self.name_currency
+        return self.slug
 
     @property
     def name(self):
@@ -96,8 +97,8 @@ class CurrencyAd(models.Model):
 
 
 def CurrencyAd_pre_save_receiver(sender, instance, *args, **kwargs):
-    if not instance.name_currency:
-        instance.name_currency = unique_name_currency_generator(instance)
+    if not instance.slug:
+        instance.slug = unique_name_currency_generator(instance)
 
 pre_save.connect(CurrencyAd_pre_save_receiver, sender=CurrencyAd) 
 
