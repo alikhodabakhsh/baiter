@@ -8,19 +8,19 @@ from django.shortcuts import render, get_object_or_404, redirect
 from analytics.mixins import ObjectViewedMixin
 
 
-from .models import CurrencyAd
+from .models import Item
 
 
-class CurrencyAdFeaturedListView(ListView):
+class ItemFeaturedListView(ListView):
     template_name = "products/list.html"
 
     def get_queryset(self, *args, **kwargs):
         request = self.request
-        return CurrencyAd.objects.all().featured()
+        return Item.objects.all()
 
 
-class CurrencyAdFeaturedDetailView(ObjectViewedMixin, DetailView):
-    queryset = CurrencyAd.objects.all().featured()
+class ItemFeaturedDetailView(ObjectViewedMixin, DetailView):
+    queryset = Item.objects.all()
     template_name = "products/featured-detail.html"
 
     # def get_queryset(self, *args, **kwargs):
@@ -28,20 +28,20 @@ class CurrencyAdFeaturedDetailView(ObjectViewedMixin, DetailView):
     #     return Product.objects.featured()
 
 
-class UserCurrencyAdHistoryView(LoginRequiredMixin, ListView):
+class UserHistoryView(LoginRequiredMixin, ListView):
     template_name = "products/user-history.html"
     def get_context_data(self, *args, **kwargs):
-        context = super(UserCurrencyAdHistoryView, self).get_context_data(*args, **kwargs)
+        context = super(UserHistoryView, self).get_context_data(*args, **kwargs)
         return context
 
     def get_queryset(self, *args, **kwargs):
         request = self.request
-        views = request.user.objectviewed_set.by_model(CurrencyAd, model_queryset=False)
+        views = request.user.objectviewed_set.by_model(Item, model_queryset=False)
         return views
 
 
 
-class CurrencyAdListView(ListView):
+class ItemListView(ListView):
     template_name = "products/list.html"
 
     # def get_context_data(self, *args, **kwargs):
@@ -50,16 +50,16 @@ class CurrencyAdListView(ListView):
     #     return context
 
     def get_context_data(self, *args, **kwargs):
-        context = super(CurrencyAdListView, self).get_context_data(*args, **kwargs)
+        context = super(ItemListView, self).get_context_data(*args, **kwargs)
         return context
 
     def get_queryset(self, *args, **kwargs):
         request = self.request
-        return CurrencyAd.objects.all()
+        return Item.objects.all()
 
 
-def CurrencyAd_list_view(request):
-    queryset = CurrencyAd.objects.all()
+def item_list_view(request):
+    queryset = Item.objects.filter(category ='Sell')
     context = {
         'object_list': queryset
     }
@@ -67,12 +67,12 @@ def CurrencyAd_list_view(request):
 
 
 
-class CurrencyAdDetailSlugView(ObjectViewedMixin, DetailView):
-    queryset = CurrencyAd.objects.all()
+class ItemDetailSlugView(ObjectViewedMixin, DetailView):
+    queryset = Item.objects.all()
     template_name = "products/detail.html"
 
     def get_context_data(self, *args, **kwargs):
-        context = super(CurrencyAdDetailSlugView, self).get_context_data(*args, **kwargs)
+        context = super(ItemDetailSlugView, self).get_context_data(*args, **kwargs)
         return context
 
     def get_object(self, *args, **kwargs):
@@ -81,11 +81,11 @@ class CurrencyAdDetailSlugView(ObjectViewedMixin, DetailView):
 
         #instance = get_object_or_404(Product, slug=slug, active=True)
         try:
-            instance = CurrencyAd.objects.get(slug=slug, active=True)
-        except CurrencyAd.DoesNotExist:
+            instance = Item.objects.get(slug=slug, active=True)
+        except Item.DoesNotExist:
             raise Http404("Not found..")
-        except CurrencyAd.MultipleObjectsReturned:
-            qs = CurrencyAd.objects.filter(slug=slug, active=True)
+        except Item.MultipleObjectsReturned:
+            qs = Item.objects.filter(slug=slug, active=True)
             instance = qs.first()
         except:
             raise Http404("Uhhmmm ")
@@ -113,7 +113,7 @@ class CurrencyAdDetailView(ObjectViewedMixin, DetailView):
     def get_object(self, *args, **kwargs):
         request = self.request
         pk = self.kwargs.get('pk')
-        instance = CurrencyAd.objects.get_by_id(pk)
+        instance = Item.objects.get_by_id(pk)
         if instance is None:
             raise Http404("Currency doesn't exist")
         return instance
@@ -135,7 +135,7 @@ def CurrencyAd_detail_view(request, pk=None, *args, **kwargs):
     # except:
     #     print("huh?")
 
-    instance = CurrencyAd.objects.get_by_id(pk)
+    instance = Item.objects.get_by_id(pk)
     if instance is None:
         raise Http404("Currency doesn't exist")
     #print(instance)

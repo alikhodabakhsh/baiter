@@ -1,12 +1,12 @@
 from django.conf.urls import url
 
 from .views import (
-        CurrencyAdListView, 
-        CurrencyAdDetailSlugView, 
-        
+        ItemListView, 
+        ItemDetailSlugView, 
         )
+        
 app_name = 'baiterx'
 urlpatterns = [
-    url(r'^$', CurrencyAdListView.as_view(), name='list'),
-    url(r'^(?P<slug>[\w-]+)/$',CurrencyAdDetailSlugView.as_view(), name='detail'),
+    url(r'^$', ItemListView.as_view(), name='list'),
+    url(r'^(?P<slug>[\w-]+)/$',ItemDetailSlugView.as_view(), name='detail'),
 ]

@@ -982,7 +982,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
 }
 
 .data-col:last-child {
-    padding-right: 0
+    padding-left: 0
 }
 
 .data-col .lead {
@@ -1460,7 +1460,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
     display: none
 }
 
-.user-tnx .dt-amount, .user-tnx .dt-usd-amount, .user-tnx .dt-account {
+.user-tnx .dt-amount,.user-tnx .dt-id, .user-tnx .dt-usd-amount, .user-tnx .dt-account {
     display: none
 }
 
@@ -1519,7 +1519,7 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
     .user-tnx .dt-amount {
         display: table-cell
     }
-    .admin-tnx .dt-amount {
+    .admin-tnx .dt-id {
         display: table-cell
     }
     .kyc-list .dt-doc-front {
@@ -1544,6 +1544,12 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
         display: table-cell
     }
     .user-tnx .dt-usd-amount {
+        display: table-cell
+    }
+    .user-tnx .dt-id {
+        display: table-cell
+    }
+    .admin-tnx .dt-id {
         display: table-cell
     }
     .admin-tnx .dt-account {
@@ -5644,8 +5650,8 @@ select.select-sm {
 
 .dropdown-content-center-left {
     top: 50%;
-    left: auto;
-    right: calc(100% + 10px);
+    right: auto;
+    left: calc(100% + 10px);
     transform: translateX(0) translateY(-50%)
 }
 
@@ -11545,3 +11551,6 @@ button:focus, input:focus, textarea:focus, select:focus {
     margin-right: -100%;
 }
 
+.table-scroll {
+    overflow-y: hidden;
+}

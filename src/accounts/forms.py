@@ -170,6 +170,7 @@ class LoginForm(forms.Form):
     #     return super(LoginView, self).form_invalid(form)
 
 
+
 class RegisterForm(forms.ModelForm):
     """A form for creating new users. Includes all the required
     fields, plus a repeated password."""
@@ -194,7 +195,4 @@ class RegisterForm(forms.ModelForm):
         # obj.send_activation_email()
         if commit:
             user.save()
-        return user
-
-
-
+        return user0

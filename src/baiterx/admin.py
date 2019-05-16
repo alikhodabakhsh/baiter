@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import CurrencyAd, Category
+from .models import Item
 from accounts.models import User
 
 
@@ -8,14 +8,7 @@ class CurrencyAdAdmin(admin.ModelAdmin):
     list_display = ['username', 'name_currency', 'category']
     list_filter = ['category']
     class Meta:
-        model = CurrencyAd
+        model = Item
 
-admin.site.register(CurrencyAd, CurrencyAdAdmin)
+admin.site.register(Item, CurrencyAdAdmin)
 
-class CategoryAdmin(admin.ModelAdmin):
-    list_display = ['status',]
-    
-    class Meta:
-        model = User
-
-admin.site.register(Category, CategoryAdmin)
